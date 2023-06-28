@@ -1,0 +1,6 @@
+framework module Pods_EGarciaUPAX {
+  umbrella header "Pods-EGarciaUPAX-umbrella.h"
+
+  export *
+  module * { export * }
+}

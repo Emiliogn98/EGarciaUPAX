@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF384D3B981B51A6553E1CDF /* Pods_EGarciaUPAX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CA42BC8195841985EA86E3 /* Pods_EGarciaUPAX.framework */; };
 		E3ADD2C82A4C906700C83685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADD2C72A4C906700C83685 /* AppDelegate.swift */; };
 		E3ADD2CA2A4C906700C83685 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADD2C92A4C906700C83685 /* SceneDelegate.swift */; };
 		E3ADD2CC2A4C906700C83685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADD2CB2A4C906700C83685 /* ViewController.swift */; };
 		E3ADD2CF2A4C906700C83685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3ADD2CD2A4C906700C83685 /* Main.storyboard */; };
 		E3ADD2D12A4C906800C83685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3ADD2D02A4C906800C83685 /* Assets.xcassets */; };
 		E3ADD2D42A4C906800C83685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3ADD2D22A4C906800C83685 /* LaunchScreen.storyboard */; };
+		E3ADD2E72A4C96E000C83685 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E3ADD2E62A4C96E000C83685 /* FirebaseDatabase */; };
+		E3ADD2E92A4C96E000C83685 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E3ADD2E82A4C96E000C83685 /* FirebaseFirestore */; };
+		E3ADD2EB2A4C9AD400C83685 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3ADD2EA2A4C9AD400C83685 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47DD1C92184A96C589D86EFC /* Pods-EGarciaUPAX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGarciaUPAX.release.xcconfig"; path = "Target Support Files/Pods-EGarciaUPAX/Pods-EGarciaUPAX.release.xcconfig"; sourceTree = "<group>"; };
+		63CA42BC8195841985EA86E3 /* Pods_EGarciaUPAX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGarciaUPAX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC5C7F22504BAA664888DD4 /* Pods-EGarciaUPAX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGarciaUPAX.debug.xcconfig"; path = "Target Support Files/Pods-EGarciaUPAX/Pods-EGarciaUPAX.debug.xcconfig"; sourceTree = "<group>"; };
 		E3ADD2C42A4C906700C83685 /* EGarciaUPAX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGarciaUPAX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3ADD2C72A4C906700C83685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3ADD2C92A4C906700C83685 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		E3ADD2D02A4C906800C83685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3ADD2D32A4C906800C83685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3ADD2D52A4C906800C83685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3ADD2EA2A4C9AD400C83685 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3ADD2E72A4C96E000C83685 /* FirebaseDatabase in Frameworks */,
+				E3ADD2E92A4C96E000C83685 /* FirebaseFirestore in Frameworks */,
+				DF384D3B981B51A6553E1CDF /* Pods_EGarciaUPAX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9924E168E2B41E9AF816C8E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63CA42BC8195841985EA86E3 /* Pods_EGarciaUPAX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A136E1EF7175C53A72CBBF9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDC5C7F22504BAA664888DD4 /* Pods-EGarciaUPAX.debug.xcconfig */,
+				47DD1C92184A96C589D86EFC /* Pods-EGarciaUPAX.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E3ADD2BB2A4C906700C83685 = {
 			isa = PBXGroup;
 			children = (
 				E3ADD2C62A4C906700C83685 /* EGarciaUPAX */,
 				E3ADD2C52A4C906700C83685 /* Products */,
+				A136E1EF7175C53A72CBBF9C /* Pods */,
+				9924E168E2B41E9AF816C8E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +92,7 @@
 				E3ADD2CD2A4C906700C83685 /* Main.storyboard */,
 				E3ADD2D02A4C906800C83685 /* Assets.xcassets */,
 				E3ADD2D22A4C906800C83685 /* LaunchScreen.storyboard */,
+				E3ADD2EA2A4C9AD400C83685 /* GoogleService-Info.plist */,
 				E3ADD2D52A4C906800C83685 /* Info.plist */,
 			);
 			path = EGarciaUPAX;
@@ -74,15 +105,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3ADD2D82A4C906800C83685 /* Build configuration list for PBXNativeTarget "EGarciaUPAX" */;
 			buildPhases = (
+				C46E4EE7D578A3D23232FF0A /* [CP] Check Pods Manifest.lock */,
 				E3ADD2C02A4C906700C83685 /* Sources */,
 				E3ADD2C12A4C906700C83685 /* Frameworks */,
 				E3ADD2C22A4C906700C83685 /* Resources */,
+				138C0515002014D4256B0B9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = EGarciaUPAX;
+			packageProductDependencies = (
+				E3ADD2E62A4C96E000C83685 /* FirebaseDatabase */,
+				E3ADD2E82A4C96E000C83685 /* FirebaseFirestore */,
+			);
 			productName = EGarciaUPAX;
 			productReference = E3ADD2C42A4C906700C83685 /* EGarciaUPAX.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +148,9 @@
 				Base,
 			);
 			mainGroup = E3ADD2BB2A4C906700C83685;
+			packageReferences = (
+				E3ADD2E52A4C96E000C83685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E3ADD2C52A4C906700C83685 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,12 +166,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3ADD2D42A4C906800C83685 /* LaunchScreen.storyboard in Resources */,
+				E3ADD2EB2A4C9AD400C83685 /* GoogleService-Info.plist in Resources */,
 				E3ADD2D12A4C906800C83685 /* Assets.xcassets in Resources */,
 				E3ADD2CF2A4C906700C83685 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		138C0515002014D4256B0B9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EGarciaUPAX/Pods-EGarciaUPAX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EGarciaUPAX/Pods-EGarciaUPAX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EGarciaUPAX/Pods-EGarciaUPAX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C46E4EE7D578A3D23232FF0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EGarciaUPAX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3ADD2C02A4C906700C83685 /* Sources */ = {
@@ -216,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +365,7 @@
 		};
 		E3ADD2D92A4C906800C83685 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC5C7F22504BAA664888DD4 /* Pods-EGarciaUPAX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +379,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +395,7 @@
 		};
 		E3ADD2DA2A4C906800C83685 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47DD1C92184A96C589D86EFC /* Pods-EGarciaUPAX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +409,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +445,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3ADD2E52A4C96E000C83685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3ADD2E62A4C96E000C83685 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3ADD2E52A4C96E000C83685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E3ADD2E82A4C96E000C83685 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3ADD2E52A4C96E000C83685 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3ADD2BC2A4C906700C83685 /* Project object */;
 }
