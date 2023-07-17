@@ -17,7 +17,8 @@
 		E3ADD2E72A4C96E000C83685 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E3ADD2E62A4C96E000C83685 /* FirebaseDatabase */; };
 		E3ADD2E92A4C96E000C83685 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E3ADD2E82A4C96E000C83685 /* FirebaseFirestore */; };
 		E3ADD2EB2A4C9AD400C83685 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3ADD2EA2A4C9AD400C83685 /* GoogleService-Info.plist */; };
-		E3AEA2072A65A11300BC557F /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AEA2062A65A11300BC557F /* TestController.swift */; };
+		E3AEA2092A65BA2400BC557F /* GraficaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AEA2082A65BA2400BC557F /* GraficaController.swift */; };
+		E3AEA20B2A65BB0400BC557F /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AEA20A2A65BB0400BC557F /* Root.swift */; };
 		E3CEFB182A61DD4D005E3C02 /* GetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CEFB172A61DD4D005E3C02 /* GetViewModel.swift */; };
 		E3CEFB1D2A61DF7C005E3C02 /* NombreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CEFB1B2A61DF7C005E3C02 /* NombreCell.swift */; };
 		E3CEFB1E2A61DF7C005E3C02 /* NombreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3CEFB1C2A61DF7C005E3C02 /* NombreCell.xib */; };
@@ -41,7 +42,8 @@
 		E3ADD2D32A4C906800C83685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3ADD2D52A4C906800C83685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3ADD2EA2A4C9AD400C83685 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E3AEA2062A65A11300BC557F /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
+		E3AEA2082A65BA2400BC557F /* GraficaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraficaController.swift; sourceTree = "<group>"; };
+		E3AEA20A2A65BB0400BC557F /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		E3CEFB172A61DD4D005E3C02 /* GetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetViewModel.swift; sourceTree = "<group>"; };
 		E3CEFB1B2A61DF7C005E3C02 /* NombreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NombreCell.swift; sourceTree = "<group>"; };
 		E3CEFB1C2A61DF7C005E3C02 /* NombreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NombreCell.xib; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		E3CEFB142A61D8B5005E3C02 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E3AEA20A2A65BB0400BC557F /* Root.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,7 +155,7 @@
 			children = (
 				E3CEFB292A621A9A005E3C02 /* TomarFotoController.swift */,
 				E3ADD2CB2A4C906700C83685 /* GetController.swift */,
-				E3AEA2062A65A11300BC557F /* TestController.swift */,
+				E3AEA2082A65BA2400BC557F /* GraficaController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,12 +287,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3ADD2CC2A4C906700C83685 /* GetController.swift in Sources */,
+				E3AEA20B2A65BB0400BC557F /* Root.swift in Sources */,
 				E3CEFB182A61DD4D005E3C02 /* GetViewModel.swift in Sources */,
+				E3AEA2092A65BA2400BC557F /* GraficaController.swift in Sources */,
 				E3CEFB1D2A61DF7C005E3C02 /* NombreCell.swift in Sources */,
 				E3CEFB2A2A621A9A005E3C02 /* TomarFotoController.swift in Sources */,
 				E3CEFB272A620178005E3C02 /* DescripcionCell.swift in Sources */,
 				E3ADD2C82A4C906700C83685 /* AppDelegate.swift in Sources */,
-				E3AEA2072A65A11300BC557F /* TestController.swift in Sources */,
 				E3ADD2CA2A4C906700C83685 /* SceneDelegate.swift in Sources */,
 				E3CEFB212A61F30B005E3C02 /* FotoCell.swift in Sources */,
 			);

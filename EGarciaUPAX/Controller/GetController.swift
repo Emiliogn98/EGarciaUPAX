@@ -26,6 +26,7 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
     var BackgroundColor : [String] = []
     var photoPickerController = UIImagePickerController()
     var nombre : String = ""
+    var lista : [Data] = []
     
     
     
@@ -35,6 +36,7 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
         ref = Database.database().reference()
         GetAll()
         configTableView()
+    
        
        
         
@@ -56,6 +58,8 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
      mostrarPopup()
 
     }
+    
+  
     @IBAction func btnAddColor(_ sender: UIButton) {
         
         let randomcolor = RandomColor()
@@ -233,6 +237,12 @@ extension GetController: UITableViewDelegate,UITableViewDataSource{
             
         }
         
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 2 {
+           
+            self.performSegue(withIdentifier: "GraficaSegue", sender: self)
+        }
     }
     
 }

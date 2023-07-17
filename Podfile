@@ -7,5 +7,6 @@ target 'EGarciaUPAX' do
 
   # Pods for EGarciaUPAX
 	pod 'Hex'
+	pod 'Charts'
 
 end
