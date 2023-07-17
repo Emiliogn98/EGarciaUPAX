@@ -307,10 +307,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xdg-B9-7af">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="560"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="688"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zps-Us-s9E" customClass="BarChartView" customModule="Charts">
+                                                <rect key="frame" x="76.666666666666686" y="0.0" width="240" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03s-q0-uYQ" customClass="PieChartView" customModule="Charts">
-                                                <rect key="frame" x="21.666666666666657" y="0.0" width="350" height="500"/>
+                                                <rect key="frame" x="21.666666666666657" y="128" width="350" height="500"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="500" id="DJP-VK-XfB"/>
@@ -318,7 +322,7 @@
                                                 </constraints>
                                             </view>
                                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aQr-dO-MrN">
-                                                <rect key="frame" x="31.666666666666657" y="500" width="330" height="60"/>
+                                                <rect key="frame" x="31.666666666666657" y="628" width="330" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="JA1-hQ-zE0"/>
                                                     <constraint firstAttribute="width" constant="330" id="R15-8y-aNx"/>
@@ -352,6 +356,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="NCj-wK-fsl"/>
                     <connections>
+                        <outlet property="barChartView" destination="Zps-Us-s9E" id="lB8-7s-vLr"/>
                         <outlet property="pageControl" destination="aQr-dO-MrN" id="oDe-hU-FNo"/>
                         <outlet property="pieChartView" destination="03s-q0-uYQ" id="z6B-cx-Ac9"/>
                     </connections>
