@@ -21,7 +21,8 @@ class GraficaController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         get()
-        data()
+      //  data()
+     //   print(lista)
         
 
     }
@@ -31,8 +32,9 @@ class GraficaController: UIViewController {
         
     }
     func data(){
-        //  var dataEntries : [Values] = self.lista[0].values!
-        var dataEntries : [Double] = [30.0,20.0,10.0]
+          var dataEntries : [Data] = self.lista
+        print(self.lista)
+    //    var dataEntries : [Double] = [30.0,20.0,10.0]
      var dataEntriesArray : [PieChartDataEntry] = []
     
 //        for obj in dataEntries {
@@ -60,12 +62,15 @@ class GraficaController: UIViewController {
     }
     func get(){
         GetViewModel.Get { response, error in
-            if response?.data != nil {
-                for obj in response!.data{
-                    self.lista.append(obj)
+            
+            DispatchQueue.main.async {
+                if response?.data != nil {
+                    for obj in response!.data{
+                        self.lista.append(obj)
+                    }
+                    //print(self.lista)
+                    self.data()
                 }
-                //print(self.lista)
-                
             }
         }
     }
