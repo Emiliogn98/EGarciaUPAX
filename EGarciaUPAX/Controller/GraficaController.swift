@@ -50,26 +50,26 @@ class GraficaController: UIViewController {
         
         switch index {
         case 0:
-            let dataValues : [Data] = lista.map {$0}
-            setupPieChartView(with: dataValues)
+           
+            setupPieChartView(with: lista[0])
             pieChartView.isHidden = false
             
             break
         case 1:
-            let dataValues : [Data] = lista.map {$0}
+         
            
-            setupPieChartView(with: dataValues)
+            setupPieChartView(with: lista[1])
             pieChartView.isHidden = false
            // barChartView.isHidden = false
             break
         case 2:
-            let dataValues : [Data] = lista.map {$0}
-            setupPieChartView(with: dataValues)
+           
+            setupPieChartView(with: lista[2])
             pieChartView.isHidden = false
             break
         case 3:
-            let dataValues : [Data] = lista.map {$0}
-            setupPieChartView(with: dataValues)
+            
+            setupPieChartView(with: lista[3])
             pieChartView.isHidden = false
             break
         default:
@@ -78,10 +78,15 @@ class GraficaController: UIViewController {
         
         
     }
-    func setupPieChartView(with data :[Data]){
+    func setupPieChartView(with data :Data){
         var dataEntries : [PieChartDataEntry] = []
-        for (index, value) in data.enumerated(){
-            let entry = PieChartDataEntry(value: Double(value.values![index].value!), label: "\(value.values![index].label!) ")
+        let centerText = "\(data.pregunta!)"
+        pieChartView.centerText = centerText
+        pieChartView.drawCenterTextEnabled = true
+        
+        
+        for obj in data.values!{
+            let entry = PieChartDataEntry(value: Double(obj.value!), label: "\(obj.label!)")
             dataEntries.append(entry)
             
         }
@@ -94,10 +99,8 @@ class GraficaController: UIViewController {
             let chartData = PieChartData(dataSet: dataSet)
 
              
-            let centerText = "Gráfica de Pastel"
-            chartData.setDrawValues(false) // Desactiva la visualización de valores en las partes de la gráfica
-            let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.alignment = .center
+           
+     
       
 
             // 6. Asignar el objeto PieChartData al PieChartView y actualizar la vista

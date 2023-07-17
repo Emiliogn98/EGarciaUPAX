@@ -142,8 +142,8 @@
             filePath = "EGarciaUPAX/Controller/GraficaController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "data()"
             landmarkType = "7">
             <Locations>
@@ -206,8 +206,8 @@
             filePath = "EGarciaUPAX/Controller/GraficaController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "get()"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,8 +222,8 @@
             filePath = "EGarciaUPAX/Controller/GraficaController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "data()"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "EGarciaUPAX/Controller/GraficaController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "setupPieChartView(with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -497,7 +497,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "CD3FD63E-D372-4C54-8143-B80161E20F22"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EGarciaUPAX/Controller/GraficaController.swift"
@@ -537,6 +537,21 @@
                   startingLineNumber = "51"
                   endingLineNumber = "51"
                   offsetFromSymbolStart = "508">
+               </Location>
+               <Location
+                  uuid = "CD3FD63E-D372-4C54-8143-B80161E20F22 - 88cc498384977a86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GraficaController.showChart(at: Swift.Int) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GraficaController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "480">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -593,7 +608,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "05C6EF43-5195-4C76-BBC0-70C53963A73F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EGarciaUPAX/Controller/GraficaController.swift"
@@ -633,6 +648,21 @@
                   startingLineNumber = "71"
                   endingLineNumber = "71"
                   offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "05C6EF43-5195-4C76-BBC0-70C53963A73F - 88cc498384977d4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GraficaController.showChart(at: Swift.Int) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GraficaController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "1528">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -737,7 +767,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "924A95AC-A757-4AD4-8C2B-6E2F0A54CBCD"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EGarciaUPAX/Controller/GraficaController.swift"
@@ -747,13 +777,45 @@
             endingLineNumber = "67"
             landmarkName = "showChart(at:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "924A95AC-A757-4AD4-8C2B-6E2F0A54CBCD - 88cc498384977cb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GraficaController.showChart(at: Swift.Int) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GraficaController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "1432">
+               </Location>
+               <Location
+                  uuid = "924A95AC-A757-4AD4-8C2B-6E2F0A54CBCD - 88cc498384977cb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GraficaController.showChart(at: Swift.Int) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GraficaController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "1188">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "989EBE48-4333-4B9C-8235-3248DC72EF2A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EGarciaUPAX/Controller/GraficaController.swift"
@@ -763,13 +825,45 @@
             endingLineNumber = "61"
             landmarkName = "showChart(at:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "989EBE48-4333-4B9C-8235-3248DC72EF2A - 88cc498384977bf8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GraficaController.showChart(at: Swift.Int) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GraficaController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1048">
+               </Location>
+               <Location
+                  uuid = "989EBE48-4333-4B9C-8235-3248DC72EF2A - 88cc498384977bf8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GraficaController.showChart(at: Swift.Int) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GraficaController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "844">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6C447010-2AD5-4136-B4F3-126F0B36D280"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EGarciaUPAX/Controller/GraficaController.swift"
@@ -779,6 +873,38 @@
             endingLineNumber = "54"
             landmarkName = "showChart(at:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6C447010-2AD5-4136-B4F3-126F0B36D280 - 88cc498384977ae3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GraficaController.showChart(at: Swift.Int) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GraficaController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "664">
+               </Location>
+               <Location
+                  uuid = "6C447010-2AD5-4136-B4F3-126F0B36D280 - 88cc498384977ae3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GraficaController.showChart(at: Swift.Int) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GraficaController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "504">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -801,14 +927,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FE668B7C-CF82-4FE0-84CA-47B38BFFE44E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EGarciaUPAX/Controller/GraficaController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "setupPieChartView(with:)"
             landmarkType = "7">
          </BreakpointContent>
