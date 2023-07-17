@@ -14,7 +14,7 @@ import Hex
 
 
 
-class GetController: UIViewController {
+class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
   
     
     @IBOutlet weak var tableView: UITableView!
@@ -52,18 +52,9 @@ class GetController: UIViewController {
         
     }
     @objc  func btnTomarFoto(){
-    
-        let vc = TomarFotoController(nibName: "TomarFotoController", bundle: nil)
-        vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        
+     mostrarPopup()
 
-        self.present(vc, animated: true)
-        
-//        let popOverVC = UIStoryboard(name: "SpinningWheel", bundle: nil).instantiateViewController(withIdentifier: "TomarFotoController") as! TomarFotoController
-//        popOverVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-//        tabBarController!.present(popOverVC, animated: true)
-
-        
-        
     }
     @IBAction func btnAddColor(_ sender: UIButton) {
         
@@ -72,6 +63,82 @@ class GetController: UIViewController {
         
         Add(color: randomcolor)
         
+    }
+    func mostrarPopup(){
+        /* con storyboard, colocar identificador*/
+        guard let popViewController = storyboard?.instantiateViewController(withIdentifier: "TomarFotoController") as? TomarFotoController else{
+            return
+        }
+        popViewController.modalPresentationStyle = .popover
+        popViewController.modalTransitionStyle = .crossDissolve
+    
+        popViewController.view.layer.cornerRadius = 15
+        popViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        addChild(popViewController)
+            view.addSubview(popViewController.view)
+                NSLayoutConstraint.activate([
+                    popViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+                    popViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+                    popViewController.view.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+                    popViewController.view.heightAnchor.constraint(equalToConstant: 500)
+                ])
+        popViewController.didMove(toParent: self)
+        popViewController.btnOcultarOutlet.addTarget(self, action: #selector(ocultarPopup), for: .touchUpInside)
+        
+       // present(popViewController, animated: true, completion: nil)
+        
+        /* con vista programatica*/
+//        let popupViewController = TomarFotoController()
+//        popupViewController.view.backgroundColor = UIColor(white: 0, alpha: 0.5)
+//        popupViewController.view.layer.cornerRadius = 15
+//        popupViewController.view.translatesAutoresizingMaskIntoConstraints = false
+//        addChild(popupViewController)
+//        view.addSubview(popupViewController.view)
+//        NSLayoutConstraint.activate([
+//            popupViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+//            popupViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+//            popupViewController.view.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+//            popupViewController.view.heightAnchor.constraint(equalToConstant: 600)
+//        ])
+//        popupViewController.didMove(toParent: self)
+        
+        /*1 */
+//        let popupViewController = TomarFotoController()
+//        popupViewController.modalPresentationStyle = .overCurrentContext
+//        popupViewController.modalTransitionStyle = .crossDissolve
+//        present(popupViewController,animated: true, completion: nil)
+        
+        /* 2*/
+//            let popViewController = TomarFotoController()
+//            self.addChild(popViewController)
+//            popViewController.view.frame = self.view.bounds
+//            self.view.addSubview(popViewController.view)
+//            popViewController.didMove(toParent: self)
+        
+        
+        
+        /*3 para ipad*/
+//        let TomarFoto = TomarFotoController()
+//       // let TomarFoto = TestController()
+//        TomarFoto.modalPresentationStyle = .popover
+//
+//
+//        let popoverPresentationController = TomarFoto.popoverPresentationController
+//        popoverPresentationController?.permittedArrowDirections = .any
+//        popoverPresentationController?.sourceView = self.view
+//        popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+//        popoverPresentationController?.delegate = self
+//
+//        present(TomarFoto, animated: true, completion: nil)
+    }
+    @objc func ocultarPopup(){
+        guard let popupViewController = children.first as? TomarFotoController else {
+            return
+        }
+        
+        popupViewController.willMove(toParent: nil)
+        popupViewController.view.removeFromSuperview()
+        popupViewController.removeFromParent()
     }
     func Add(color : String){
         self.ref.child("Color").childByAutoId().setValue(color)

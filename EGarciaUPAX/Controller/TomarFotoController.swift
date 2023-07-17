@@ -23,35 +23,29 @@ class TomarFotoController: UIViewController {
     @IBOutlet weak var btnCamaraOutlet: UIButton!
     
     
+    @IBOutlet weak var btnOcultarOutlet: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+   
+     viewWillLayoutSubviews()
+
         
-        showAnimate()
+    }
+    override func viewWillLayoutSubviews() {
+            super.viewWillLayoutSubviews()
         
-    }
-    func showAnimate(){
-        self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-        self.view.alpha = 0.0;
-        UIView.animate(withDuration: 0.25, animations: {
-            self.view.alpha = 1.0
-            self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        preferredContentSize = CGSize(width: 200, height: 200)
             
-        });
     }
-    func removeAnimate() {
-        UIView.animate(withDuration: 0.25, animations: {
-            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-            self.view.alpha = 0.0;
-            
-        }, completion:{(finished : Bool)  in
-            if (finished)
-            {
-                self.view.removeFromSuperview()
-            }
-        });
+    
+    @IBAction func btnOcultar(_ sender: UIButton) {
+      
     }
+    
+
+
     
     @IBAction func btnCamara(_ sender: UIButton) {
         
