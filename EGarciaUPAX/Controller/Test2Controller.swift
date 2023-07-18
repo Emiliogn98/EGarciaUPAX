@@ -1,53 +1,68 @@
 //
-//  GraficaController.swift
+//  Test2Controller.swift
 //  EGarciaUPAX
 //
-//  Created by MacBookMBA4 on 17/07/23.
+//  Created by MacBookMBA4 on 18/07/23.
 //
 
 import UIKit
 import Charts
 
-class GraficaController: UIViewController,UIScrollViewDelegate{
+class Test2Controller: UIViewController {
     var lista : [data] = []
-    var valores : [Double] = []
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var pieChartView: PieChartView!
- 
-    @IBOutlet weak var ScrollViewOutlet: UIScrollView!
-    
-    
-    @IBOutlet weak var pageControl: UIPageControl!
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        get()
-   
+
     }
- 
     
-    @IBAction func pageControlAction(_ sender: UIPageControl) {
-//        ScrollViewOutlet.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+    
+//    func createSlides() -> [Slide] {
 //
-//        ScrollViewOutlet.contentSize = CGSize(width: view.frame.width, height: view.frame.height)
-//        ScrollViewOutlet.isPagingEnabled = true
-        showChart(at: sender.currentPage)
-      
-        
-    }
-    func pageControlMethod(){
-        
-        pageControl.numberOfPages = lista.count
-        pageControl.currentPage = 0
-        pageControl.addTarget(self, action: #selector(pageControlAction), for: .valueChanged)
-        
-        showChart(at: 0)
-    }
+//            let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide1.imageView.image = UIImage(named: "ic_onboarding_1")
+//            slide1.labelTitle.text = "A real-life bear"
+//            slide1.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+//            
+//            let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide2.imageView.image = UIImage(named: "ic_onboarding_2")
+//            slide2.labelTitle.text = "A real-life bear"
+//            slide2.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+//            
+//            let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide3.imageView.image = UIImage(named: "ic_onboarding_3")
+//            slide3.labelTitle.text = "A real-life bear"
+//            slide3.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+//            
+//            let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide4.imageView.image = UIImage(named: "ic_onboarding_4")
+//            slide4.labelTitle.text = "A real-life bear"
+//            slide4.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+//            
+//            
+//            let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//            slide5.imageView.image = UIImage(named: "ic_onboarding_5")
+//            slide5.labelTitle.text = "A real-life bear"
+//            slide5.labelDesc.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+//            
+//            return [slide1, slide2, slide3, slide4, slide5]
+//        }
+//    func setupSlideScrollView(slides : [Slide]) {
+//        scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+//        scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
+//        scrollView.isPagingEnabled = true
+//
+//        for i in 0 ..< slides.count {
+//            slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
+//            scrollView.addSubview(slides[i])
+//        }
     
     func showChart(at index: Int){
-        pieChartView.isHidden = true
+       
        
         self.lista
         
@@ -83,7 +98,6 @@ class GraficaController: UIViewController,UIScrollViewDelegate{
         
     }
     func setupPieChartView(with data :data){
-
         var dataEntries : [PieChartDataEntry] = []
         
         let title = "\(data.pregunta!)"
@@ -124,7 +138,7 @@ class GraficaController: UIViewController,UIScrollViewDelegate{
         pieChartView.chartDescription.enabled = false // Desactivar descripción de la gráfica
         
         pieChartView.holeRadiusPercent = 0.9 // Tamaño del agujero central en la gráfica de pastel
-        pieChartView.rotationEnabled = false // Permite rotar la gráfica de pastel con gestos
+        pieChartView.rotationEnabled = true // Permite rotar la gráfica de pastel con gestos
         pieChartView.drawEntryLabelsEnabled = false
         
         
@@ -134,19 +148,13 @@ class GraficaController: UIViewController,UIScrollViewDelegate{
     func data(){
         var dataEntries = self.lista
         print(self.lista)
-        //    var dataEntries : [Double] = [30.0,20.0,10.0]
         var dataEntriesArray : [PieChartDataEntry] = []
-        
         for data in dataEntries[0].values! {
-            //self.valores = data.values! as! [Double]
-            
+          
             let entry = PieChartDataEntry(value: Double(data.value!), label: "\(data.label!)")
             dataEntriesArray.append(entry)
         }
-        //        for obj in 0..<dataEntries.count {
-        //            let entry = PieChartDataEntry(value: dataEntries[Data(from: obj as! Decoder)], label: "Datos: ")
-        //                    dataEntriesArray.append(entry)
-        //                }
+   
         let dataSet = PieChartDataSet(entries: dataEntriesArray, label: "")
         
         let data = PieChartData(dataSet: dataSet)
@@ -173,14 +181,12 @@ class GraficaController: UIViewController,UIScrollViewDelegate{
                     }
                     //print(self.lista)
                     // self.data()
-                    self.pageControlMethod()
+//                    self.pageControlMethod()
                 }
             }
         }
     }
     
-    
-    
-    
-}
 
+
+}

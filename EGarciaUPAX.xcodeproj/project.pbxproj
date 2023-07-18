@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DF384D3B981B51A6553E1CDF /* Pods_EGarciaUPAX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CA42BC8195841985EA86E3 /* Pods_EGarciaUPAX.framework */; };
+		E3797DB52A670FD000FFCAE0 /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3797DB42A670FD000FFCAE0 /* testController.swift */; };
+		E3797DB72A67313800FFCAE0 /* Test2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3797DB62A67313800FFCAE0 /* Test2Controller.swift */; };
 		E3ADD2C82A4C906700C83685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADD2C72A4C906700C83685 /* AppDelegate.swift */; };
 		E3ADD2CA2A4C906700C83685 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADD2C92A4C906700C83685 /* SceneDelegate.swift */; };
 		E3ADD2CC2A4C906700C83685 /* GetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ADD2CB2A4C906700C83685 /* GetController.swift */; };
@@ -35,6 +37,8 @@
 		47DD1C92184A96C589D86EFC /* Pods-EGarciaUPAX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGarciaUPAX.release.xcconfig"; path = "Target Support Files/Pods-EGarciaUPAX/Pods-EGarciaUPAX.release.xcconfig"; sourceTree = "<group>"; };
 		63CA42BC8195841985EA86E3 /* Pods_EGarciaUPAX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EGarciaUPAX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC5C7F22504BAA664888DD4 /* Pods-EGarciaUPAX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EGarciaUPAX.debug.xcconfig"; path = "Target Support Files/Pods-EGarciaUPAX/Pods-EGarciaUPAX.debug.xcconfig"; sourceTree = "<group>"; };
+		E3797DB42A670FD000FFCAE0 /* testController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
+		E3797DB62A67313800FFCAE0 /* Test2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2Controller.swift; sourceTree = "<group>"; };
 		E3ADD2C42A4C906700C83685 /* EGarciaUPAX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGarciaUPAX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3ADD2C72A4C906700C83685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3ADD2C92A4C906700C83685 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				E3CEFB292A621A9A005E3C02 /* TomarFotoController.swift */,
 				E3ADD2CB2A4C906700C83685 /* GetController.swift */,
 				E3AEA2082A65BA2400BC557F /* GraficaController.swift */,
+				E3797DB42A670FD000FFCAE0 /* testController.swift */,
+				E3797DB62A67313800FFCAE0 /* Test2Controller.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,7 +302,9 @@
 				E3AEA20B2A65BB0400BC557F /* Root.swift in Sources */,
 				E3CEFB182A61DD4D005E3C02 /* GetViewModel.swift in Sources */,
 				E3AEA2092A65BA2400BC557F /* GraficaController.swift in Sources */,
+				E3797DB52A670FD000FFCAE0 /* testController.swift in Sources */,
 				E3CEFB1D2A61DF7C005E3C02 /* NombreCell.swift in Sources */,
+				E3797DB72A67313800FFCAE0 /* Test2Controller.swift in Sources */,
 				E3CEFB2A2A621A9A005E3C02 /* TomarFotoController.swift in Sources */,
 				E3CEFB272A620178005E3C02 /* DescripcionCell.swift in Sources */,
 				E3ADD2C82A4C906700C83685 /* AppDelegate.swift in Sources */,
