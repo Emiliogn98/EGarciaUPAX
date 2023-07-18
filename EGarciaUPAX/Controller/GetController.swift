@@ -38,8 +38,9 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
         ref = Database.database().reference()
         GetAll()
         configTableView()
+        self.userDefault.removeObject(forKey: "foto")
         let foto = userDefault.string(forKey: "foto")
-        imagen = foto!
+      //  imagen = foto!
         
         
     

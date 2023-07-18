@@ -104,7 +104,7 @@ extension TomarFotoController : UIImagePickerControllerDelegate, UINavigationCon
         
         
         self.base64 = imageData!.base64EncodedString()
-          self.userDefault.removeObject(forKey: "foto")
+      //  self.userDefault.removeObject(forKey: "foto")
         self.userDefault.set(self.base64, forKey: "foto")
         
         
