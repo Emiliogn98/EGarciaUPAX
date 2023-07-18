@@ -19,6 +19,8 @@
 		E3ADD2EB2A4C9AD400C83685 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3ADD2EA2A4C9AD400C83685 /* GoogleService-Info.plist */; };
 		E3AEA2092A65BA2400BC557F /* GraficaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AEA2082A65BA2400BC557F /* GraficaController.swift */; };
 		E3AEA20B2A65BB0400BC557F /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AEA20A2A65BB0400BC557F /* Root.swift */; };
+		E3AEA20D2A66224100BC557F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AEA20C2A66224100BC557F /* Result.swift */; };
+		E3AEA20F2A66229300BC557F /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AEA20E2A66229300BC557F /* Usuario.swift */; };
 		E3CEFB182A61DD4D005E3C02 /* GetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CEFB172A61DD4D005E3C02 /* GetViewModel.swift */; };
 		E3CEFB1D2A61DF7C005E3C02 /* NombreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CEFB1B2A61DF7C005E3C02 /* NombreCell.swift */; };
 		E3CEFB1E2A61DF7C005E3C02 /* NombreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3CEFB1C2A61DF7C005E3C02 /* NombreCell.xib */; };
@@ -44,6 +46,8 @@
 		E3ADD2EA2A4C9AD400C83685 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3AEA2082A65BA2400BC557F /* GraficaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraficaController.swift; sourceTree = "<group>"; };
 		E3AEA20A2A65BB0400BC557F /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		E3AEA20C2A66224100BC557F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E3AEA20E2A66229300BC557F /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		E3CEFB172A61DD4D005E3C02 /* GetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetViewModel.swift; sourceTree = "<group>"; };
 		E3CEFB1B2A61DF7C005E3C02 /* NombreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NombreCell.swift; sourceTree = "<group>"; };
 		E3CEFB1C2A61DF7C005E3C02 /* NombreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NombreCell.xib; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				E3AEA20A2A65BB0400BC557F /* Root.swift */,
+				E3AEA20C2A66224100BC557F /* Result.swift */,
+				E3AEA20E2A66229300BC557F /* Usuario.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,8 +300,10 @@
 				E3CEFB2A2A621A9A005E3C02 /* TomarFotoController.swift in Sources */,
 				E3CEFB272A620178005E3C02 /* DescripcionCell.swift in Sources */,
 				E3ADD2C82A4C906700C83685 /* AppDelegate.swift in Sources */,
+				E3AEA20F2A66229300BC557F /* Usuario.swift in Sources */,
 				E3ADD2CA2A4C906700C83685 /* SceneDelegate.swift in Sources */,
 				E3CEFB212A61F30B005E3C02 /* FotoCell.swift in Sources */,
+				E3AEA20D2A66224100BC557F /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

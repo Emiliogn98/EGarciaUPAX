@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eFr-5i-bwe">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="690"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="740"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nkW-TF-gNJ">
                                                 <rect key="frame" x="11.666666666666657" y="0.0" width="370" height="640"/>
@@ -68,14 +68,34 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uJ-Iv-6CC">
-                                                <rect key="frame" x="159" y="660" width="75" height="30"/>
+                                                <rect key="frame" x="130" y="660" width="133.33333333333337" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="rX3-rj-dWi"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Cambiar Color"/>
                                                 <connections>
                                                     <action selector="btnAddColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t9h-6E-ogi"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1L-fC-63j">
+                                                <rect key="frame" x="171.66666666666666" y="690" width="50" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="LRo-zE-ogs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sM-WW-R3u">
+                                                <rect key="frame" x="154.33333333333334" y="710" width="84.666666666666657" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="bpE-Ku-qbM"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Agregar"/>
+                                                <connections>
+                                                    <action selector="btnAgregar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I43-jY-8Nc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -295,7 +315,7 @@
             </objects>
             <point key="canvasLocation" x="917" y="14"/>
         </scene>
-        <!--Grafica Controller-->
+        <!--Gráficas-->
         <scene sceneID="VVs-iN-4ml">
             <objects>
                 <viewController id="ukO-uv-MLq" customClass="GraficaController" customModule="EGarciaUPAX" customModuleProvider="target" sceneMemberID="viewController">
@@ -307,22 +327,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xdg-B9-7af">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="688"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="690"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zps-Us-s9E" customClass="BarChartView" customModule="Charts">
-                                                <rect key="frame" x="76.666666666666686" y="0.0" width="240" height="128"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03s-q0-uYQ" customClass="PieChartView" customModule="Charts">
-                                                <rect key="frame" x="21.666666666666657" y="128" width="350" height="500"/>
+                                                <rect key="frame" x="21.666666666666657" y="0.0" width="350" height="630"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="500" id="DJP-VK-XfB"/>
+                                                    <constraint firstAttribute="height" constant="630" id="DJP-VK-XfB"/>
                                                     <constraint firstAttribute="width" constant="350" id="M5m-Mv-hqh"/>
                                                 </constraints>
                                             </view>
                                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aQr-dO-MrN">
-                                                <rect key="frame" x="31.666666666666657" y="628" width="330" height="60"/>
+                                                <rect key="frame" x="31.666666666666657" y="630" width="330" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="JA1-hQ-zE0"/>
                                                     <constraint firstAttribute="width" constant="330" id="R15-8y-aNx"/>
@@ -354,9 +370,8 @@
                             <constraint firstItem="AFm-rI-0b8" firstAttribute="trailing" secondItem="KCg-nl-IHi" secondAttribute="trailing" id="tcU-h2-2Wj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NCj-wK-fsl"/>
+                    <navigationItem key="navigationItem" title="Gráficas" id="NCj-wK-fsl"/>
                     <connections>
-                        <outlet property="barChartView" destination="Zps-Us-s9E" id="lB8-7s-vLr"/>
                         <outlet property="pageControl" destination="aQr-dO-MrN" id="oDe-hU-FNo"/>
                         <outlet property="pieChartView" destination="03s-q0-uYQ" id="z6B-cx-Ac9"/>
                     </connections>

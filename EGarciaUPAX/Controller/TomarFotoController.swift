@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class TomarFotoController: UIViewController {
     var base64 :  String = ""
@@ -25,27 +26,41 @@ class TomarFotoController: UIViewController {
     
     @IBOutlet weak var btnOcultarOutlet: UIButton!
     
+    let userDefault = UserDefaults.standard
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
-     viewWillLayoutSubviews()
-
+        
+        let foto = userDefault.string(forKey: "foto")
+        if foto == "" || foto == nil {
+            imageView.image = UIImage(systemName: "photo")
+        }else{
+            let dataDecoded : Data = Data(base64Encoded: foto!)!//Proceso inverso de base64 a Data
+            imageView.image = UIImage(data: dataDecoded)
+            
+        }
+        
+       
+        
+        viewWillLayoutSubviews()
+        
         
     }
     override func viewWillLayoutSubviews() {
-            super.viewWillLayoutSubviews()
+        super.viewWillLayoutSubviews()
         
         preferredContentSize = CGSize(width: 200, height: 200)
-            
+        
     }
     
     @IBAction func btnOcultar(_ sender: UIButton) {
-      
+        
     }
     
-
-
+    
+    
     
     @IBAction func btnCamara(_ sender: UIButton) {
         
@@ -89,6 +104,8 @@ extension TomarFotoController : UIImagePickerControllerDelegate, UINavigationCon
         
         
         self.base64 = imageData!.base64EncodedString()
+          self.userDefault.removeObject(forKey: "foto")
+        self.userDefault.set(self.base64, forKey: "foto")
         
         
         
@@ -104,6 +121,8 @@ extension TomarFotoController : UIImagePickerControllerDelegate, UINavigationCon
         guardaImagen = info[.originalImage] as? UIImage
         
         UIImageWriteToSavedPhotosAlbum(guardaImagen!, nil, nil, nil);
+        self.userDefault.removeObject(forKey: "foto")
+        self.userDefault.set(guardaImagen, forKey: "foto")
         
     }
     

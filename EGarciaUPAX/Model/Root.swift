@@ -7,10 +7,10 @@
 
 import Foundation
 struct Root: Codable {
-    var data : [Data] = []
+    var data : [data] = []
     
 }
-struct Data: Codable {
+struct data: Codable {
     
    
     var pregunta : String?

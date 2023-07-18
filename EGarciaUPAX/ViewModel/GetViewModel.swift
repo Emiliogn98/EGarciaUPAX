@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import FirebaseCore
+import FirebaseFirestore
 
 class GetViewModel{
 
@@ -38,6 +40,31 @@ class GetViewModel{
           
           //  return result
       }
+    static func Add(_ usuario : Usuario, responseResult : @escaping(Result?, Error?)-> Void){
+        var result = Result()
+          let db = Firestore.firestore()
+          var ref: DocumentReference? = nil
+          
+          ref = db.collection("Usuario").addDocument(data: [
+            "Nombre": "\(usuario.Nombre)",
+            "Imagen": "\(usuario.Imagen)",
+       
+          ]){ err in
+              if let err = err {
+                  print("Error adding document: \(err)")
+                  result.Correct = false
+                  
+              } else {
+                  print("Document added with ID: \(ref!.documentID)")
+                 result.Correct = true
+              }
+              
+              responseResult(result, nil)
+          }
+    
+      }
+    
+    
     
     
 

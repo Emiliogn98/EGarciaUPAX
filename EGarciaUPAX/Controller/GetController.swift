@@ -26,7 +26,9 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
     var BackgroundColor : [String] = []
     var photoPickerController = UIImagePickerController()
     var nombre : String = ""
+    var imagen : String = ""
     var lista : [Data] = []
+    let userDefault = UserDefaults.standard
     
     
     
@@ -36,6 +38,10 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
         ref = Database.database().reference()
         GetAll()
         configTableView()
+        let foto = userDefault.string(forKey: "foto")
+        imagen = foto!
+        
+        
     
        
        
@@ -45,12 +51,41 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
         
         
     }
+    
+    
+    @IBAction func btnAgregar(_ sender: UIButton) {
+        var usuario = Usuario()
+        usuario.Nombre = self.nombre
+        usuario.Imagen = self.imagen
+        GetViewModel.Add(usuario) { response, error in
+            
+            if response != nil {
+                let alert = UIAlertController(title: "Mensaje", message: "usuario agregado", preferredStyle: .alert)
+                let action = UIAlertAction(title: "Aceptar", style: .default)
+                alert.addAction(action)
+                self.present(alert, animated: true)
+                
+            }
+            else{
+                print("ocurrio un error")
+                let alert = UIAlertController(title: "Mensaje", message: "Ocurrio un error al agregar", preferredStyle: .alert)
+                let action = UIAlertAction(title: "Aceptar", style: .default)
+                alert.addAction(action)
+                self.present(alert, animated: true)
+                
+                
+            }
+        }
+    }
+    
     func configTableView(){
         tableView.register(UINib(nibName: "NombreCell", bundle: nil), forCellReuseIdentifier: "NombreCell")
         tableView.register(UINib(nibName: "FotoCell", bundle: nil), forCellReuseIdentifier: "FotoCell")
         tableView.register(UINib(nibName: "DescripcionCell", bundle: nil), forCellReuseIdentifier: "DescripcionCell")
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.layer.cornerRadius = 15
+        tableView.layer.masksToBounds = true
         
     }
     @objc  func btnTomarFoto(){
@@ -158,6 +193,9 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
                     self.BackgroundColor.append (color)
                     DispatchQueue.main.async {
                         self.view.backgroundColor = UIColor (hex:self.BackgroundColor.last!)
+                       // self.tableView.backgroundColor = UIColor (hex:self.BackgroundColor.last!)
+                        self.btnColor.tintColor = UIColor (hex:self.BackgroundColor.last!)
+                       
                         
                         //  print(self.BackgroundColor)
                     }
@@ -216,6 +254,7 @@ extension GetController: UITableViewDelegate,UITableViewDataSource{
             let cell = tableView.dequeueReusableCell(withIdentifier: "NombreCell", for: indexPath) as! NombreCell
             
             cell.txtNombre.delegate = self
+            self.nombre = cell.txtNombre.text!
       //      cell.txtNombre.addTarget(self, action: #selector(textChange), for: .editingChanged)
             
             return cell
