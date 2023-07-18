@@ -62,10 +62,42 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
             landmarkName = "textChange(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9285FFE7-0AE9-43C2-A83A-A082A43D3410 - d5b3ddbc85dac726"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.textChange(__C.UITextField) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "242"
+                  endingLineNumber = "242"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "9285FFE7-0AE9-43C2-A83A-A082A43D3410 - d5b3ddbc85dac747"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.textChange(__C.UITextField) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "243"
+                  endingLineNumber = "243"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,8 +110,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "319"
-            endingLineNumber = "319"
+            startingLineNumber = "348"
+            endingLineNumber = "348"
             landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +126,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "btnTomarFoto()"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +158,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1030,6 +1062,307 @@
             startingLineNumber = "35"
             endingLineNumber = "35"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1806935B-44D9-47B4-AE20-958D255A5104"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EGarciaUPAX/Controller/GetController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CB874D7-CD5B-45C9-9BAD-0043508A01CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EGarciaUPAX/Controller/GetController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "btnAgregar(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4CB874D7-CD5B-45C9-9BAD-0043508A01CC - 390e575d4fcfe25e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "4CB874D7-CD5B-45C9-9BAD-0043508A01CC - 390e575d4fcfe2bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "848">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D4696C63-77F3-4B18-B37C-58E8AD810D86"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EGarciaUPAX/Controller/GetController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "btnAgregar(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D4696C63-77F3-4B18-B37C-58E8AD810D86 - 3576d6cb5f8828e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;EGarciaUPAX.Result&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "D4696C63-77F3-4B18-B37C-58E8AD810D86 - 390e575d4fcfe3e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "652">
+               </Location>
+               <Location
+                  uuid = "D4696C63-77F3-4B18-B37C-58E8AD810D86 - 3576d6cb5f8828a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;EGarciaUPAX.Result&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4029A4F7-BB77-4FE4-A778-C8A98E754DE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EGarciaUPAX/Controller/GetController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "btnAgregar(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4029A4F7-BB77-4FE4-A778-C8A98E754DE4 - 390e575d4fcfe44e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "984">
+               </Location>
+               <Location
+                  uuid = "4029A4F7-BB77-4FE4-A778-C8A98E754DE4 - 390e575d4fcfe44e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "848">
+               </Location>
+               <Location
+                  uuid = "4029A4F7-BB77-4FE4-A778-C8A98E754DE4 - 390e575d4fcfe5b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "848">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB385FB4-8BCA-4162-84CE-F167A83F9886"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EGarciaUPAX/Controller/GetController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "btnAgregar(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DB385FB4-8BCA-4162-84CE-F167A83F9886 - 390e575d4fcfe708"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "DB385FB4-8BCA-4162-84CE-F167A83F9886 - 390e575d4fcfe708"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "DB385FB4-8BCA-4162-84CE-F167A83F9886 - 390e575d4fcfe46d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EGarciaUPAX.GetController.btnAgregar(__C.UIButton) -&gt; ()"
+                  moduleName = "EGarciaUPAX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83F1F9BB-B033-4AB2-B77B-DCE9105EE2D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EGarciaUPAX/Controller/GetController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
+            landmarkName = "textChange(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12EDECE1-14F9-4390-9334-C2A8D0572C70"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EGarciaUPAX/Controller/GetController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "360"
+            endingLineNumber = "360"
+            landmarkName = "textFieldDidChangeSelection(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0ED87867-7AB0-423C-85C5-1D983AEC1277"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EGarciaUPAX/Controller/GetController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "371"
+            endingLineNumber = "371"
+            landmarkName = "textFieldDidChangeSelection(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

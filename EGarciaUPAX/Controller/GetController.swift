@@ -17,6 +17,10 @@ import Hex
 class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
   
     
+    
+    @IBOutlet weak var btnAgregarOutlet: UIButton!
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -25,10 +29,11 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
     var ref: DatabaseReference!
     var BackgroundColor : [String] = []
     var photoPickerController = UIImagePickerController()
-    var nombre : String = ""
-    var imagen : String = ""
+    var nombre : String? = nil
+    var imagen : String? = nil
     var lista : [Data] = []
     let userDefault = UserDefaults.standard
+    
     
     
     
@@ -37,11 +42,13 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
         super.viewDidLoad()
         ref = Database.database().reference()
         GetAll()
+        btnAgregarOutlet.isHidden = true
         configTableView()
         self.userDefault.removeObject(forKey: "foto")
-        let foto = userDefault.string(forKey: "foto")
-      //  imagen = foto!
         
+        
+//        let foto = userDefault.string(forKey: "foto")
+//        imagen = foto
         
     
        
@@ -55,9 +62,23 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     
     @IBAction func btnAgregar(_ sender: UIButton) {
+        let foto = userDefault.string(forKey: "foto")
+        imagen = foto
         var usuario = Usuario()
         usuario.Nombre = self.nombre
         usuario.Imagen = self.imagen
+        
+        
+//        guard usuario.Nombre != nil else{
+//            print("estoy aqui por que estoy vacio")
+//            return
+//        }
+        guard usuario.Imagen != nil else{
+            print("estoy aqui por que estoy vacio")
+            return
+        }
+        
+        
         GetViewModel.Add(usuario) { response, error in
             
             if response != nil {
@@ -227,7 +248,7 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
     }
     @objc func textChange(_ textField: UITextField) {
 
-     //   print(textField.text)
+        print(textField.text)
         self.nombre = textField.text!
     }
 
@@ -255,7 +276,10 @@ extension GetController: UITableViewDelegate,UITableViewDataSource{
             let cell = tableView.dequeueReusableCell(withIdentifier: "NombreCell", for: indexPath) as! NombreCell
             
             cell.txtNombre.delegate = self
-            self.nombre = cell.txtNombre.text!
+           
+           // self.nombre = cell.txtNombre.text!
+   
+            
       //      cell.txtNombre.addTarget(self, action: #selector(textChange), for: .editingChanged)
             
             return cell
@@ -279,10 +303,15 @@ extension GetController: UITableViewDelegate,UITableViewDataSource{
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            
+            
+        }
         if indexPath.row == 2 {
            
             self.performSegue(withIdentifier: "GraficaSegue", sender: self)
         }
+        
     }
     
 }
@@ -328,6 +357,17 @@ extension GetController: UITextFieldDelegate{
                return true
        }
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        
+        self.nombre = textField.text
+        if nombre != "" {
+           
+            DispatchQueue.main.async {
+                self.btnAgregarOutlet.isHidden = false
+            }
+        }else{
+            DispatchQueue.main.async {
+                self.btnAgregarOutlet.isHidden = true
+            }
+        }
+        //print(self.nombre)
     }
 }
