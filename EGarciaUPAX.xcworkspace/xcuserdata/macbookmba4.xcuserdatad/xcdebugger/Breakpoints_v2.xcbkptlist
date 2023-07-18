@@ -55,54 +55,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9285FFE7-0AE9-43C2-A83A-A082A43D3410"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EGarciaUPAX/Controller/GetController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "251"
-            endingLineNumber = "251"
-            landmarkName = "textChange(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9285FFE7-0AE9-43C2-A83A-A082A43D3410 - d5b3ddbc85dac726"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EGarciaUPAX.GetController.textChange(__C.UITextField) -&gt; ()"
-                  moduleName = "EGarciaUPAX"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "242"
-                  endingLineNumber = "242"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "9285FFE7-0AE9-43C2-A83A-A082A43D3410 - d5b3ddbc85dac747"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EGarciaUPAX.GetController.textChange(__C.UITextField) -&gt; ()"
-                  moduleName = "EGarciaUPAX"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba4/Documents/EGarciaNavarreteIOSMarzo/EGarciaUPAX/EGarciaUPAX/Controller/GetController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "243"
-                  endingLineNumber = "243"
-                  offsetFromSymbolStart = "80">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A55E6F27-95C7-4C42-9927-E808D0A9854C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -110,8 +62,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "348"
-            endingLineNumber = "348"
+            startingLineNumber = "341"
+            endingLineNumber = "341"
             landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +78,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "btnTomarFoto()"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +110,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1068,22 +1020,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1806935B-44D9-47B4-AE20-958D255A5104"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EGarciaUPAX/Controller/GetController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "4CB874D7-CD5B-45C9-9BAD-0043508A01CC"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1091,8 +1027,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "btnAgregar(_:)"
             landmarkType = "7">
             <Locations>
@@ -1139,8 +1075,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "btnAgregar(_:)"
             landmarkType = "7">
             <Locations>
@@ -1202,8 +1138,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "btnAgregar(_:)"
             landmarkType = "7">
             <Locations>
@@ -1265,8 +1201,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "btnAgregar(_:)"
             landmarkType = "7">
             <Locations>
@@ -1321,22 +1257,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "83F1F9BB-B033-4AB2-B77B-DCE9105EE2D6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EGarciaUPAX/Controller/GetController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "252"
-            endingLineNumber = "252"
-            landmarkName = "textChange(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "12EDECE1-14F9-4390-9334-C2A8D0572C70"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1344,8 +1264,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "360"
-            endingLineNumber = "360"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
             landmarkName = "textFieldDidChangeSelection(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1360,8 +1280,8 @@
             filePath = "EGarciaUPAX/Controller/GetController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "371"
-            endingLineNumber = "371"
+            startingLineNumber = "364"
+            endingLineNumber = "364"
             landmarkName = "textFieldDidChangeSelection(_:)"
             landmarkType = "7">
          </BreakpointContent>

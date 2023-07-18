@@ -92,8 +92,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="bpE-Ku-qbM"/>
                                                 </constraints>
+                                                <color key="tintColor" systemColor="linkColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Agregar"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Agregar" cornerStyle="medium"/>
                                                 <connections>
                                                     <action selector="btnAgregar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I43-jY-8Nc"/>
                                                 </connections>
@@ -387,6 +388,9 @@
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="xmark.app.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

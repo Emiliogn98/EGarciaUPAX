@@ -33,6 +33,7 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
     var imagen : String? = nil
     var lista : [Data] = []
     let userDefault = UserDefaults.standard
+   
     
     
     
@@ -42,22 +43,11 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
         super.viewDidLoad()
         ref = Database.database().reference()
         GetAll()
-        btnAgregarOutlet.isHidden = true
+        btnAgregarOutlet.isEnabled = false
         configTableView()
-        self.userDefault.removeObject(forKey: "foto")
+        limpiar()
         
-        
-//        let foto = userDefault.string(forKey: "foto")
-//        imagen = foto
-        
-    
-       
-       
-        
-        
-        
-        
-        
+  
     }
     
     
@@ -79,12 +69,15 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
         }
         
         
-        GetViewModel.Add(usuario) { response, error in
+        GetViewModel.Add(usuario) { [self] response, error in
             
             if response != nil {
                 let alert = UIAlertController(title: "Mensaje", message: "usuario agregado", preferredStyle: .alert)
                 let action = UIAlertAction(title: "Aceptar", style: .default)
                 alert.addAction(action)
+               
+                
+                self.limpiar()
                 self.present(alert, animated: true)
                 
             }
@@ -99,6 +92,16 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
             }
         }
     }
+    
+    @objc func limpiar(){
+        self.userDefault.removeObject(forKey: "foto")
+        self.ocultarPopup()
+        self.nombre = nil
+        tableView.reloadData()
+    
+    }
+ 
+
     
     func configTableView(){
         tableView.register(UINib(nibName: "NombreCell", bundle: nil), forCellReuseIdentifier: "NombreCell")
@@ -246,14 +249,8 @@ class GetController: UIViewController, UIPopoverPresentationControllerDelegate {
         let randomHex = String(format: "#%06X", arc4random_uniform(0xFFFFFF))
         return randomHex
     }
-    @objc func textChange(_ textField: UITextField) {
-
-        print(textField.text)
-        self.nombre = textField.text!
-    }
-
-    
-    
+ 
+ 
 }
 
 
@@ -276,11 +273,7 @@ extension GetController: UITableViewDelegate,UITableViewDataSource{
             let cell = tableView.dequeueReusableCell(withIdentifier: "NombreCell", for: indexPath) as! NombreCell
             
             cell.txtNombre.delegate = self
-           
-           // self.nombre = cell.txtNombre.text!
-   
-            
-      //      cell.txtNombre.addTarget(self, action: #selector(textChange), for: .editingChanged)
+            cell.txtNombre.text = ""
             
             return cell
             break
@@ -356,16 +349,16 @@ extension GetController: UITextFieldDelegate{
                    }
                return true
        }
-    func textFieldDidChangeSelection(_ textField: UITextField) {
+   func textFieldDidChangeSelection(_ textField: UITextField) {
         self.nombre = textField.text
         if nombre != "" {
            
             DispatchQueue.main.async {
-                self.btnAgregarOutlet.isHidden = false
+                self.btnAgregarOutlet.isEnabled = true
             }
         }else{
             DispatchQueue.main.async {
-                self.btnAgregarOutlet.isHidden = true
+                self.btnAgregarOutlet.isEnabled = false
             }
         }
         //print(self.nombre)
